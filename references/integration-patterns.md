@@ -92,7 +92,7 @@ For live dashboards (EPLAN progress → browser) an ASP.NET Core SignalR hub wor
 
 - **Hub app** (external, ASP.NET Core): `Hub` subclass + `wwwroot` page with the JS client.
 - **EPLAN script**: posts to a controller endpoint (`MessagesController`) or connects with the SignalR .NET client; sends status per pipeline step.
-- **Browsers get push updates without polling.**
+- Browsers get push updates without polling.
 
 Use when several observers need live progress; otherwise plain HTTP POST + file sentinel (pitfalls.md §6) is simpler.
 
