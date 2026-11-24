@@ -59,7 +59,7 @@ already have.
 
 `GetException()` returns **null** for some failures, and those are silent on
 every channel. Measured: `SetProjectLanguage /DISPLAY:...` with no project
-open returns false with GetException() null, acc.SysMessages empty, and
+open returns false with `GetException()` null, `acc.SysMessages` empty, and
 nothing in the system message tree at any severity — and a *valid* language id
 fails identically, so the parameter was never the problem. It is a missing
 precondition that EPLAN declines to report.
@@ -131,7 +131,7 @@ oCLI.Execute("edit", acc);
 ### Page properties — read a property of the open page
 ```csharp
 acc.AddParameter("PropertyId", "11006");     // page type
-acc.Execute("XEsGetPagePropertyAction", acc);
+oCLI.Execute("XEsGetPagePropertyAction", acc);
 string value = ""; acc.GetParameter("PropertyValue", ref value);
 ```
 
