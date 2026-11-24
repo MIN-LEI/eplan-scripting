@@ -131,7 +131,7 @@ The file name is in `Content-Disposition`. Measured with a real PAT on
   (representation types 1, 2, … for the multi-line, overview, panel views),
   whose `description` is an EPLAN multilanguage string
   (`de_DE@…;en_US@…;`). None of this imports into the parts database: an
-  `.e3d` goes through the 3D import, a DXF through the DXF import.
+`.e3d` goes through the 3D import, a DXF through the DXF import.
 
 ## The download list (`/basketitems`, token)
 
